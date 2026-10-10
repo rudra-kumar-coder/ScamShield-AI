@@ -1,0 +1,11 @@
+thresholds:
+  low_max: 24
+  medium_max: 49
+  high_max: 74
+limits:
+  max_text_chars: 12000
+  max_batch_rows: 100
+llm:
+  enabled: true
+  timeout_seconds: 25
+  redact_sensitive: true
