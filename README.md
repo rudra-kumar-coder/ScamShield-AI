@@ -1,3 +1,27 @@
+# 🛡️ ScamShield AI — Intelligent Scam Detection System
+
+### 🌐 Live Website
+
+**Try ScamShield AI online:**
+
+https://scamshield-ai-ka9yvn3ezbhmbmfyg4kpe4.streamlit.app/
+
+### 📂 GitHub Source Code
+
+https://github.com/rudra-kumar-coder/ScamShield-AI
+
+### About the Project
+
+ScamShield AI is an NLP-based scam detection system that analyzes suspicious SMS, WhatsApp messages, phishing links, fake loan offers, and job scams using rule-based detection and Gemini AI.
+
+**Features:**
+- Scam risk scoring
+- Phishing and suspicious URL detection
+- Gemini AI analysis
+- Security recommendations
+- Batch CSV analysis
+- Downloadable reports
+
 # ScamShield AI — Colab, Gemini, GitHub and Streamlit Cloud
 
 Scam detection with explainable NLP rules, URL syntax checks, optional Gemini API, and batch CSV screening. Risk scores are heuristics, not fraud probabilities.
