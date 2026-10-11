@@ -42,5 +42,16 @@ def analyze_llm(text: str, findings: dict) -> dict:
                 raise ValueError(f"Invalid {field}")
             data[field] = data[field][:5]
         return {"status": "ok", **data}
+       except requests.HTTPError as exc:
+        code = exc.response.status_code if exc.response is not None else "unknown"
+        return {
+            "status": "error",
+            "message": f"Gemini API HTTP status: {code}"
+        }
+
     except (requests.RequestException, ValueError, KeyError, IndexError, TypeError) as exc:
+        return {
+            "status": "error",
+            "message": f"Gemini error: {type(exc).__name__}"
+        }
         return {"status": "error", "message": f"LLM unavailable: {type(exc).__name__}. Rule-based result remains available."}
